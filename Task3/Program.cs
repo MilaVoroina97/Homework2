@@ -16,7 +16,7 @@ void DayWeek()
     {
         Console.WriteLine("да");
     }
-    if (x > 7)
+    if (x == 0 || x < 0 || x > 7) 
     {
         Console.WriteLine("Введите число от 1 до 7, обозначающее день недели ");
     }
@@ -42,7 +42,7 @@ void DayWeek()
         }
         else
         {
-            if (x == 0 || x > 7)
+            if (x == 0 || x < 0 || x > 7)
             {
                 Console.WriteLine("Введите число от 1 до 7, обозначающее день недели ");
             }
