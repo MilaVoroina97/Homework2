@@ -1,7 +1,7 @@
 ﻿// Доп.задача
 Console.WriteLine("Введите число программистов:");
 int n = Convert.ToInt32(Console.ReadLine());
-if (n == 1 && n % 10 == 1 && n % 100 != 11)
+if (n % 10 == 1 && n % 100 != 11)
 {
     Console.WriteLine(n + " Программист");
 }
