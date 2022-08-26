@@ -3,37 +3,40 @@
 //782 -> 8
 //918 -> 1
 
-//void ShowSecondNumbwer()
-//{
-    //Console.WriteLine("Введите трехзначное число: ");
-    //int x = Convert.ToInt32(Console.ReadLine());
+// 1 вариант 
+//int ShowSecondNumbwer(int x)
+//{   
+    //int x1 = 0;
     //if (x >= 100 && x < 1000)
     //{
-        //int x1 = x /10 % 10 ;
-       // Console.WriteLine(x1);
+       // x1 = x /10 % 10 ;
+        //Console.WriteLine(x1);   
     //}
-    //else
-    //{
+    //else 
+    //{  
         //Console.WriteLine("Вы ввели не трехзначное число,введите именно трехзначное ");
     //}
+    
+    //return(x1);    
 //}
-   
-//ShowSecondNumbwer();
 
-int ShowSecondNumbwer(int x)
-{   
-    int x1 = 0;
+//ShowSecondNumbwer(432);
+
+// 2 вариант:
+
+void ShowSecondNumbwer()
+{
+    Console.WriteLine("Введите трехзначное число: ");
+    int x = Convert.ToInt32(Console.ReadLine());
     if (x >= 100 && x < 1000)
     {
-        x1 = x /10 % 10 ;
-        Console.WriteLine(x1);   
+        int x1 = x /10 % 10 ;
+        Console.WriteLine(x1);
     }
-    else 
-    {  
+    else
+    {
         Console.WriteLine("Вы ввели не трехзначное число,введите именно трехзначное ");
     }
-    
-    return(x1);    
 }
-
-ShowSecondNumbwer(432);
+   
+ShowSecondNumbwer();
